@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(315deg, #fdfbfb, #fdd80a, #35ff08, #07ffe2, #ff074cfa, #ffc507fa, #fffa072b);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.wrapper {
+    padding: 70px;
+}
+
+.container input {
+    display: block;
+    margin: 0 auto 30px;
+    width: 250px;
+    height: 40px;
+    border: solid 2px lime;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: darkgreen;
+}
+
+.container button {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    border-color: green;
+    border-radius: 10px;
+    background-color: lime;
+}
+
+#external_block {
+    position: relative;
+    margin-top: 200px;
+}
+#block {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 10px;
+}
+
